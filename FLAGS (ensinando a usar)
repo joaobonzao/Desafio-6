@@ -1,0 +1,33 @@
+package javaapplication106;
+
+import java.util.Scanner;
+
+public class JavaApplication106 {
+
+    public static void main(String[] args) {
+        //FLAGS
+        Scanner ler = new Scanner(System.in);
+        int c, n, nSorte;
+        boolean achou;
+        c = 1;
+        achou = false; //flag
+        while (c <= 3 && !achou) {
+            nSorte = 1 + (int) Math.random() * 10;
+            System.out.println("Digite o seu número da sorte");
+            n = ler.nextInt();
+            if (n == nSorte) {
+                System.out.println("UAU!! VOCÊ ACERTOU!!!!");
+                achou = true;
+            } else {
+                System.out.println("Errou!!");
+                c++;
+                if (c > 3) {
+                    System.out.println("Perdeu :/");
+                }
+            }
+
+        }
+
+    }
+
+}
