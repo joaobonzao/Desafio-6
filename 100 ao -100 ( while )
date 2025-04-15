@@ -1,0 +1,23 @@
+package javaapplication105;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication105 {
+
+    public static void main(String[] args) {
+       Scanner ler = new Scanner(System.in);
+       DecimalFormat decimal = new DecimalFormat("0.00");
+       //Variáveis
+       int cont;
+       //Entrada de dados
+       cont = 100;
+       //Processamento e Saida
+       while(cont >= -100){
+           System.out.println(cont);
+           cont--;
+       }
+       
+    }
+    
+}
