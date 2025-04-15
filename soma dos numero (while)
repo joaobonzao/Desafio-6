@@ -1,0 +1,27 @@
+package javaapplication105;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication105 {
+
+    public static void main(String[] args) {
+       Scanner ler = new Scanner(System.in);
+       DecimalFormat decimal = new DecimalFormat("0.00");
+       //Variáveis
+       int numero,soma;
+       //Entrada de dados
+       soma = 0;
+       numero =1;
+       //Processamento e Saida
+       while(numero != 0){
+           System.out.println("Insira o número");
+           numero= ler.nextInt();
+           if(numero != 0){
+               soma += numero;
+           }
+ 
+       }
+        System.out.println("Soma: " + soma);
+    }
+}
