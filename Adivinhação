@@ -1,18 +1,18 @@
-package javaapplication106;
+package javaapplication112;
 
 import java.util.Scanner;
 
-public class JavaApplication106 {
+public class JavaApplication112 {
 
     public static void main(String[] args) {
-        //FLAGS
+     //FLAGS
         Scanner ler = new Scanner(System.in);
         int c, n, nSorte;
         boolean achou;
         c = 1;
         achou = false; //flag
-        while (c <= 3 && !achou) {
-            nSorte = 1 + (int) Math.random() * 10;
+        do{
+            nSorte =  (int) Math.random() * 100;
             System.out.println("Digite o seu número da sorte");
             n = ler.nextInt();
             if (n == nSorte) {
@@ -21,13 +21,13 @@ public class JavaApplication106 {
             } else {
                 System.out.println("Errou!!");
                 c++;
-                if (c > 3) {
-                    System.out.println("Perdeu :/");
-                }
-            }
+               
+                
+            }  
 
-        }
+        }while(!achou);
 
     }
 
 }
+   
