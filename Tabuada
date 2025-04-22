@@ -1,0 +1,24 @@
+package javaapplication112;
+
+import java.util.Scanner;
+
+public class JavaApplication112 {
+
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+        System.out.print("Digite o número para calcular a tabuada: ");
+        //Variáveis
+        int numero, inicio, fim, cont;
+        //Entrada de dados
+        numero = ler.nextInt();
+        inicio = 1;
+        fim = 20;
+        //Pocessamento
+        for (cont = inicio; cont <= fim; cont++) {
+            //Saida de dados
+            System.out.println(numero + " x " + cont + " = " + (numero * cont));
+        }
+    }
+
+}
